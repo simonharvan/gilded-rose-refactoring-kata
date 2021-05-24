@@ -28,7 +28,7 @@ internal class GildedRoseTest {
     }
 
     @Test
-    fun agedBrieQualityIncreasesByOneUntilSellin() {
+    fun agedBrieQualityIncreasesByOneUntilSellIn() {
         val items = arrayOf(Item("Aged Brie", 10, 10))
         val app = GildedRose(items)
 
@@ -39,7 +39,7 @@ internal class GildedRoseTest {
     }
 
     @Test
-    fun agedBrieQualityIncreasesByTwoUntilSellin() {
+    fun agedBrieQualityIncreasesByTwoUntilSellIn() {
         val items = arrayOf(Item("Aged Brie", 0, 10))
         val app = GildedRose(items)
 
@@ -109,7 +109,7 @@ internal class GildedRoseTest {
 
     @Test
     fun conjuredDegradeTwiceAsFast() {
-        val items = arrayOf(Item("Conjured", 4, 16))
+        val items = arrayOf(Item("Conjured Mana Cake", 4, 16))
         val app = GildedRose(items)
         for (i in 0 until 4) {
             app.updateQuality()
@@ -119,7 +119,7 @@ internal class GildedRoseTest {
 
     @Test
     fun conjuredDegradeTwiceAsFastAfterSellIn() {
-        val items = arrayOf(Item("Conjured", 2, 16))
+        val items = arrayOf(Item("Conjured Mana Cake", 2, 16))
         val app = GildedRose(items)
         for (i in 0 until 4) {
             app.updateQuality()
